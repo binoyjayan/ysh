@@ -284,7 +284,7 @@ impl Evaluator {
         // TODO: Do not clone the block statements
         self.eval_statements(
             &mut Rc::new(RefCell::new(extended_env)),
-            function.body.statements.clone(),
+            function.body.statements,
         )
     }
 }
